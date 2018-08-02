@@ -1,8 +1,8 @@
 ---
-layout: post
 title: Hello Android Studio 00
-tags: Android Studio
+tags: Android Studio, TeXt
 date: 2016-11-05 11:56:58
+key: 20180701
 ---
 
 ## Android Studio 简单介绍
