@@ -105,22 +105,21 @@ sources: # bootcdn (default), unpkg
 ## => Comments
 ##############################
 comments:
-  provider: gitalk # false (default), "disqus", "gitalk", "custom"
+  provider: disqus # false (default), "disqus", "gitalk", "custom"
 
   ## Disqus
   disqus:
-    shortname: # the Disqus shortname for the site
+    shortname: healthy-tree # the Disqus shortname for the site
 
   ## Gitalk
   # please refer to https://github.com/gitalk/gitalk for more info.
   gitalk:
-    clientID    : 4a45c98aa3cc37d596f1 # GitHub Application Client ID
-    clientSecret: ba30753c4812019348185241730a33bd5377afa9 # GitHub Application Client Secret
-    repository  : https://github.com/healthy-tree/healthy-tree.github.io/ # GitHub repo
-    owner       : healthy-tree # GitHub repo owner
+    clientID    : # GitHub Application Client ID
+    clientSecret: # GitHub Application Client Secret
+    repository  : # GitHub repo
+    owner       : # GitHub repo owner
     admin: # GitHub repo owner and collaborators, only these guys can initialize GitHub issues, IT IS A LIST.
       # - your GitHub Id
-      - healthy-tree
 
 
 ## => Pageview
