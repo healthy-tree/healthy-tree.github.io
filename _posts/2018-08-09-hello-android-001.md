@@ -49,13 +49,14 @@ date time PID-TID/package priority/tag: message
 private static final String TAG = "MyActivity";
 ```
 
-``` Android Studio live templates
+Android Studio live templates
+```
 * logt
 ```
 
 ### 添加日志
-
-``` Android Studio live templates
+Android Studio live templates
+```
 * logv
 * logd
 * logi
@@ -72,7 +73,7 @@ if (Log.isLoggable(TAG, Log.DEBUG)) {
 ```
 
 ### 修改设备 Prop
-``` ADB Shell
+``` bash
 adb shell
 
 setprop log.tag.MyActivity DEBUG
