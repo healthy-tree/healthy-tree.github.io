@@ -27,7 +27,7 @@ description: > # this means to ignore newlines until "Language & timezone"
 
 ## => Language and Timezone
 ##############################
-lang: en # the language of your site, "en" (default, English), "zh"(简体中文), "zh-Hans"(简体中文), "zh-Hant"(繁體中文)
+lang: zh # the language of your site, "en" (default, English), "zh"(简体中文), "zh-Hans"(简体中文), "zh-Hant"(繁體中文)
 timezone: Asia/Shanghai # see https://en.wikipedia.org/wiki/List_of_tz_database_time_zones for the available values
 
 
@@ -68,14 +68,14 @@ paths:
 ##############################
 ## excerpt
 excerpt_separator: <!--more-->
-excerpt_type: html # text (default), html
+excerpt_type: text # text (default), html
 
 ## license
 license: CC-BY-NC-4.0 # "CC-BY-4.0", "CC-BY-SA-4.0", "CC-BY-NC-4.0", "CC-BY-ND-4.0"
 
 ## TOC
 toc:
-  selectors: # "h1,h2,h3" (default)
+  selectors: "h1,h2,h3" # "h1,h2,h3" (default)
 
 
 ## => Markdown Enhancements
@@ -137,12 +137,12 @@ pageview:
 ## => Analytics
 ##############################
 analytics:
-  provider: false # false (default), "google", "custom"
+  provider: google # false (default), "google", "custom"
 
   ## Google Analytics
   google:
-    tracking_id : # Google Analytics id for the site
-    anonymize_ip: false # Anonymize IP tracking for Analytics
+    tracking_id : UA-123644029-1 # Google Analytics id for the site
+    anonymize_ip: true # Anonymize IP tracking for Analytics
 
 
 ## => Build
@@ -178,7 +178,7 @@ defaults:
       license: true
       aside:
         toc: true
-      show_edit_on_github: true
+      show_edit_on_github: false
       pageview: true
 
 

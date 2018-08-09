@@ -1,7 +1,8 @@
 ---
 title: "Hello Android 001"
 date: "2018-08-09 10:51"
-key: 20180809
+layout: article
+key: lis20180809
 tags:
   - Android
   - Debug
