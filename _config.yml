@@ -27,6 +27,12 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: lishu5566
 github_username:  healthy-tree
 
+url: "https://healthy-tree.github.io/"
+baseurl: ""
+
+lang: en
+timezone: automatically
+
 # Build settings
 theme: minima
 # theme: jekyll-whiteglass
@@ -36,9 +42,22 @@ plugins:
   - jekyll-paginate
   - jekyll-sitemap
 
+# Build settings
+markdown: kramdown
+excerpt_separator: "<!-- more -->"
+
 permalink: /:year/:month/:day/:title/
 paginate_path: /posts/:num/
 paginate: 5
+
+# Markdown settings
+kramdown:
+  auto_ids: false
+  enable_coderay: false
+  entity_output: as_char
+  footnote_nr: 1
+  smart_quotes: lsquo,rsquo,ldquo,rdquo
+  toc_levels: 1..6
 
 jekyll-archives:
   enabled:
@@ -49,24 +68,11 @@ jekyll-archives:
     category: /categories/:name/
     tag: /tags/:name/
 
-
-
-# Exclude from processing.
-# The following items will not be processed, by default.
-# Any item listed under the `exclude:` key here will be automatically added to
-# the internal "default list".
-#
-# Excluded items can be processed by explicitly listing the directories or
-# their entries' file path in the `include:` list.
-#
-# exclude:
-#   - .sass-cache/
-#   - .jekyll-cache/
-#   - gemfiles/
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules/
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - Rakefile
+  - README.md
+  - LICENSE.txt
+  - CHANGELOG.md
+  - vendor
