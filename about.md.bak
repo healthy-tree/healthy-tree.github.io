@@ -4,21 +4,93 @@ title: "About"
 permalink: /about/
 ---
 
-___
+whiteglass is a minimal, responsive Jekyll theme for hackers.
 
-大家好，我是 Kevin Lee， 不是什么大神，也不是什么牛人，在此博客仅记录我的学习过程。
+## Installation
 
-### 网络信息
+Add this line to your Jekyll site's Gemfile:
 
-* Email : lishu5566@gmail.com / lishu@pm.me
-* WeChat: Healthy_Tree
+``` ruby
+gem "jekyll-whiteglass"
+```
 
-### 个人介绍
+And add this line to your Jekyll site's `_config.yml`:
 
-* 8 软件开发相关工作经验， 3 年以上项目和团队管理经验。
-* 技术擅长Java、Android、Python等。
-* MacOS、Linux、Unix。
-*
+``` yaml
+theme: jekyll-whiteglass
+```
+
+And then execute:
+
+``` sh
+bundle
+```
+
+Or install it yourself as:
+
+``` sh
+gem install jekyll-whiteglass
+```
+
+## Quick Start
+
+1. Generate a new Jekyll blog:
+
+   ``` sh
+   jekyll new blog --skip-bundle
+   cd blog
+   ```
+
+2. Edit `Gemfile` to use whiteglass theme:
+
+   ``` ruby
+   gem "jekyll-whiteglass"
+   ```
+
+3. Edit `_config.yml` to use whiteglass theme and its plugins:
+
+   ``` yaml
+   theme: jekyll-whiteglass
+   plugins:
+     - jekyll-archives
+     - jekyll-paginate
+     - jekyll-sitemap
+
+   permalink: /:year/:month/:day/:title/
+   paginate_path: /posts/:num/
+   paginate: 5
+
+   jekyll-archives:
+     enabled:
+       - categories
+       - tags
+     layout: category_archives
+     permalinks:
+       category: /categories/:name/
+       tag: /tags/:name/
+   ```
+
+4. Copy
+   [`index.html`](https://github.com/yous/whiteglass/blob/master/index.html),
+   [`about.md`](https://github.com/yous/whiteglass/blob/master/about.md),
+   [`archives.md`](https://github.com/yous/whiteglass/blob/master/archives.md),
+   [`feed.xml`](https://github.com/yous/whiteglass/blob/master/feed.xml), and
+   [`_data/navigation.yml`](https://github.com/yous/whiteglass/blob/master/_data/navigation.yml)
+   from the theme:
+
+   ``` sh
+   rm index.md
+   curl -L -O "https://github.com/yous/whiteglass/raw/master/{index.html,about.md,archives.md,feed.xml}"
+   curl -L --create-dirs -o _data/navigation.yml https://github.com/yous/whiteglass/raw/master/_data/navigation.yml
+   ```
+
+5. Install gems and you're good to go! The blog will be available on
+   `http://127.0.0.1:4000`.
+
+   ``` sh
+   bundle install
+   bundle exec jekyll serve
+   ```
 
 ## Deployment to GitHub Pages using Travis CI
 
