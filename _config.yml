@@ -33,6 +33,8 @@ baseurl: ""
 lang: en
 timezone: automatically
 
+google_analytics: UA-123644029-1
+
 # Build settings
 theme: minima
 # theme: jekyll-whiteglass
