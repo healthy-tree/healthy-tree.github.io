@@ -1,0 +1,15 @@
+---
+layout: "post"
+title: "STAR 法则"
+date: "2019-09-16 21:09"
+---
+
+> STAR法则： Situation、Task、Action、Result
+
+Situation：在什么情况下发生的事情。
+
+Task：你是如何明确你的任务的。
+
+Action：针对这样的情况，采取了那些行动。
+
+Result： 结果如何，并在这个过程中学到了什么。
