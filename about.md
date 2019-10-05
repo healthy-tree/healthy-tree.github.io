@@ -4,8 +4,6 @@ title: "About"
 permalink: /about/
 ---
 
-___
-
 大家好，我是 Kevin Lee， 不是什么大神，也不是什么牛人，在此博客仅记录我的学习过程。
 
 ### 网络信息
