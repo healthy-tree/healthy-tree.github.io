@@ -1,9 +1,0 @@
----
-layout: post
-title: "Jekyll Base"
-date: "2019-09-05 23:48:13 +0800"
----
-
-我使用的 RMBP（MacOS-10.14.6），
-
-最新的Jekyll版本是4.0.0版本，
