@@ -2,13 +2,41 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Kevin&#39;sBlog - A corner of lifelong learning</title>
-    <link>http://localhost:1313/tags/</link>
+    <link>https://healthy-tree.github.io/tags/</link>
     <description>Recent content in Tags on Kevin&#39;sBlog - A corner of lifelong learning</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language>
+    <language>zh-cn</language>
+    <lastBuildDate>Fri, 20 Mar 2020 21:44:42 +0800</lastBuildDate>
     
-	<atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://healthy-tree.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Android</title>
+      <link>https://healthy-tree.github.io/tags/android/</link>
+      <pubDate>Fri, 20 Mar 2020 21:44:42 +0800</pubDate>
+      
+      <guid>https://healthy-tree.github.io/tags/android/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>NDK</title>
+      <link>https://healthy-tree.github.io/tags/ndk/</link>
+      <pubDate>Fri, 20 Mar 2020 21:44:42 +0800</pubDate>
+      
+      <guid>https://healthy-tree.github.io/tags/ndk/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>2020/01</title>
+      <link>https://healthy-tree.github.io/tags/2020/01/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://healthy-tree.github.io/tags/2020/01/</guid>
+      <description></description>
+    </item>
     
   </channel>
 </rss>
