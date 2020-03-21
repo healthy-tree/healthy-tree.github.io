@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Kevin&#39;sBlog - A corner of lifelong learning</title>
+    <link>http://localhost:1313/</link>
+    <description>Recent content on Kevin&#39;sBlog - A corner of lifelong learning</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Fri, 20 Mar 2020 21:44:42 +0800</lastBuildDate>
+    
+	<atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Android NDK Study Notes(001)</title>
+      <link>http://localhost:1313/post/android-ndk-study-notes001/</link>
+      <pubDate>Fri, 20 Mar 2020 21:44:42 +0800</pubDate>
+      
+      <guid>http://localhost:1313/post/android-ndk-study-notes001/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
