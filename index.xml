@@ -6,7 +6,7 @@
     <description>Recent content on Kevin&#39;sBlog - A corner of lifelong learning</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sun, 22 Mar 2020 09:56:24 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 22 Mar 2020 21:55:05 +0800</lastBuildDate>
     
 	<atom:link href="https://healthy-tree.github.io/index.xml" rel="self" type="application/rss+xml" />
     
@@ -17,25 +17,38 @@
       <pubDate>Sun, 22 Mar 2020 09:56:24 +0800</pubDate>
       
       <guid>https://healthy-tree.github.io/about/</guid>
-      <description>Kevin Lee Mobile: (+86)18601920351 Email: lishu5566@gmail.com</description>
+      <description>Kevin Lee Mobile: (+86)18601920351 Email: lishu5566@gmail.com 爱好</description>
     </item>
     
     <item>
-      <title>Android NDK Study Notes 002</title>
-      <link>https://healthy-tree.github.io/post/android-ndk-study-notes-002/</link>
-      <pubDate>Sat, 21 Mar 2020 01:18:24 +0800</pubDate>
+      <title>朱子治家格言</title>
+      <link>https://healthy-tree.github.io/post/%E6%9C%B1%E5%AD%90%E6%B2%BB%E5%AE%B6%E6%A0%BC%E8%A8%80/</link>
+      <pubDate>Wed, 25 Mar 2020 14:53:33 +0800</pubDate>
       
-      <guid>https://healthy-tree.github.io/post/android-ndk-study-notes-002/</guid>
-      <description></description>
+      <guid>https://healthy-tree.github.io/post/%E6%9C%B1%E5%AD%90%E6%B2%BB%E5%AE%B6%E6%A0%BC%E8%A8%80/</guid>
+      <description>黎明即起，灑掃庭除，要內外整潔；既昏便息，關鎖門戶，必親自檢點。一粥一飯，當思來處不易；半絲半縷，恒念物力維艱。 宜未雨而綢繆，毋臨渴而掘井。</description>
     </item>
     
     <item>
-      <title>Android NDK Study Notes-001</title>
-      <link>https://healthy-tree.github.io/post/android-ndk-study-notes-001/</link>
-      <pubDate>Fri, 20 Mar 2020 21:44:42 +0800</pubDate>
+      <title>增广贤文</title>
+      <link>https://healthy-tree.github.io/post/%E5%A2%9E%E5%B9%BF%E8%B4%A4%E6%96%87/</link>
+      <pubDate>Wed, 25 Mar 2020 14:21:47 +0800</pubDate>
       
-      <guid>https://healthy-tree.github.io/post/android-ndk-study-notes-001/</guid>
-      <description>00、C 基础 &amp;lt;1&amp;gt;基本数据类型与指针入门 &amp;lt;2&amp;gt;指针运算和函数指针 &amp;lt;3&amp;gt;动态开辟内存和字符串 &amp;lt;4&amp;g</description>
+      <guid>https://healthy-tree.github.io/post/%E5%A2%9E%E5%B9%BF%E8%B4%A4%E6%96%87/</guid>
+      <description>《增广贤文》又名《昔时贤文》、《古今贤文》。书名最早见之于明代万历年间的戏曲《牡丹亭》，据此可推知此书最迟写成于万历年间。后经明、清两代 文人</description>
+    </item>
+    
+    <item>
+      <title>Resume</title>
+      <link>https://healthy-tree.github.io/resume/</link>
+      <pubDate>Sun, 22 Mar 2020 21:55:05 +0800</pubDate>
+      
+      <guid>https://healthy-tree.github.io/resume/</guid>
+      <description>Kevin Lee  Mobile: (+86)18601920351
+Email: lishu5566@gmail.com
+  Education 2007/09-2011/07 Yanching Institute of Technology
+ Degree: Bachelor Major: Computer Science and Technology(Full-time School)
+  Project Experience </description>
     </item>
     
   </channel>
