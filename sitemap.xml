@@ -9,14 +9,28 @@
   </url>
   
   <url>
-    <loc>https://healthy-tree.github.io/categories/</loc>
-    <lastmod>2020-03-25T14:53:33+08:00</lastmod>
+    <loc>https://healthy-tree.github.io/post/android-base-002/</loc>
+    <lastmod>2020-03-26T14:27:58+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://healthy-tree.github.io/post/</loc>
+    <lastmod>2020-03-26T14:27:58+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://healthy-tree.github.io/post/android-base-001/</loc>
+    <lastmod>2020-03-26T14:02:47+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://healthy-tree.github.io/categories/</loc>
     <lastmod>2020-03-25T14:53:33+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
