@@ -9,6 +9,13 @@
   </url>
   
   <url>
+    <loc>https://healthy-tree.github.io/tags/android/</loc>
+    <lastmod>2020-03-26T14:27:58+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://healthy-tree.github.io/post/android-base-002/</loc>
     <lastmod>2020-03-26T14:27:58+08:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -16,7 +23,21 @@
   </url>
   
   <url>
+    <loc>https://healthy-tree.github.io/tags/base/</loc>
+    <lastmod>2020-03-26T14:27:58+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://healthy-tree.github.io/post/</loc>
+    <lastmod>2020-03-26T14:27:58+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://healthy-tree.github.io/tags/</loc>
     <lastmod>2020-03-26T14:27:58+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -31,13 +52,6 @@
   
   <url>
     <loc>https://healthy-tree.github.io/categories/</loc>
-    <lastmod>2020-03-25T14:53:33+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://healthy-tree.github.io/tags/</loc>
     <lastmod>2020-03-25T14:53:33+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -88,6 +102,12 @@
   <url>
     <loc>https://healthy-tree.github.io/resume/</loc>
     <lastmod>2020-03-22T21:55:05+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://healthy-tree.github.io/tags/2020/03/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
