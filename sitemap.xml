@@ -9,6 +9,27 @@
   </url>
   
   <url>
+    <loc>https://healthy-tree.github.io/post/</loc>
+    <lastmod>2020-03-30T11:13:53+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://healthy-tree.github.io/post/vimrc/</loc>
+    <lastmod>2020-03-30T11:13:53+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://healthy-tree.github.io/post/iterm2-shell-integration/</loc>
+    <lastmod>2020-03-30T08:35:25+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://healthy-tree.github.io/tags/android/</loc>
     <lastmod>2020-03-26T14:27:58+08:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -24,13 +45,6 @@
   
   <url>
     <loc>https://healthy-tree.github.io/tags/base/</loc>
-    <lastmod>2020-03-26T14:27:58+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://healthy-tree.github.io/post/</loc>
     <lastmod>2020-03-26T14:27:58+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
