@@ -1,4 +1,4 @@
-You will also have these commands:
+用了很久的 Iterm2， 还有一些小插件，可以让你的 Terminal 更加的好用。
 
 ```shell script
 imgcat filename

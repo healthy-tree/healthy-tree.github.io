@@ -1,3 +1,6 @@
+
+自用 vim 配置文件
+
 ```shell script
 if empty(glob('~/.vim/autoload/plug.vim'))
   silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
