@@ -9,8 +9,15 @@
   </url>
   
   <url>
+    <loc>https://healthy-tree.github.io/post/plantuml_001/</loc>
+    <lastmod>2020-04-02T15:11:06+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://healthy-tree.github.io/post/</loc>
-    <lastmod>2020-03-30T11:13:53+08:00</lastmod>
+    <lastmod>2020-04-02T15:11:06+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>

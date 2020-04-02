@@ -1,0 +1,296 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<meta property="og:title" content="Android Base 001" />
+<meta property="og:description" content="00、环境搭建 &lt;1、配置代理  蓝灯 小火箭  在 {用户目录}/.gradle/ 配置 gradle.property 添加如下代码
+systemProp.http.proxyHost=***.***.***.*** systemProp.https.proxyHost=***.***.***.*** systemProp.http.proxyPort=*** systemProp.https.proxyPort=*** &lt;2、使用 阿里云 Maven 仓库镜像（推荐） 在 {用户目录}/.gradle/ 创建 init.gradle 文件，并添加如下代码
+allprojects{ repositories { def ALIYUN_REPOSITORY_URL = &#39;https://maven.aliyun.com/repository/public/&#39; def ALIYUN_JCENTER_URL = &#39;https://maven.aliyun.com/repository/jcenter/&#39; def ALIYUN_GOOGLE_URL = &#39;https://maven.aliyun.com/repository/google/&#39; def ALIYUN_GRADLE_PLUGIN_URL = &#39;https://maven.aliyun.com/repository/gradle-plugin/&#39; all { ArtifactRepository repo -&gt; if(repo instanceof MavenArtifactRepository){ def url = repo.url.toString() if (url.startsWith(&#39;https://repo1.maven.org/maven2/&#39;)) { project.logger.lifecycle &#34;Repository ${repo.url} replaced by $ALIYUN_REPOSITORY_URL.&#34; remove repo } if (url.startsWith(&#39;https://jcenter.bintray.com/&#39;)) { project." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://example.com/2020/03/android-base-001/" />
+<meta property="article:published_time" content="2020-03-26T14:02:47+08:00" />
+<meta property="article:modified_time" content="2020-03-26T14:02:47+08:00" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Android Base 001"/>
+<meta name="twitter:description" content="00、环境搭建 &lt;1、配置代理  蓝灯 小火箭  在 {用户目录}/.gradle/ 配置 gradle.property 添加如下代码
+systemProp.http.proxyHost=***.***.***.*** systemProp.https.proxyHost=***.***.***.*** systemProp.http.proxyPort=*** systemProp.https.proxyPort=*** &lt;2、使用 阿里云 Maven 仓库镜像（推荐） 在 {用户目录}/.gradle/ 创建 init.gradle 文件，并添加如下代码
+allprojects{ repositories { def ALIYUN_REPOSITORY_URL = &#39;https://maven.aliyun.com/repository/public/&#39; def ALIYUN_JCENTER_URL = &#39;https://maven.aliyun.com/repository/jcenter/&#39; def ALIYUN_GOOGLE_URL = &#39;https://maven.aliyun.com/repository/google/&#39; def ALIYUN_GRADLE_PLUGIN_URL = &#39;https://maven.aliyun.com/repository/gradle-plugin/&#39; all { ArtifactRepository repo -&gt; if(repo instanceof MavenArtifactRepository){ def url = repo.url.toString() if (url.startsWith(&#39;https://repo1.maven.org/maven2/&#39;)) { project.logger.lifecycle &#34;Repository ${repo.url} replaced by $ALIYUN_REPOSITORY_URL.&#34; remove repo } if (url.startsWith(&#39;https://jcenter.bintray.com/&#39;)) { project."/>
+
+
+    <meta name="description" content="">
+    <link rel="canonical" href="https://example.com/2020/03/android-base-001/">
+
+    
+    <title>Android Base 001 &middot; Material Blog</title>
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://example.com/css/style.css" rel="stylesheet">
+
+    
+
+    
+
+    
+  </head>
+  <body>
+    
+      
+
+
+
+<nav class="white" role="navigation">
+    <div class="row max-width">
+        <div class="col s12 l10 offset-l1">
+            
+            <a href="#" data-target="nav-mobile" class="sidenav-trigger black-text">
+                <i class="material-icons">menu</i>
+            </a>
+
+            
+            <ul id="nav-mobile" class="sidenav">
+                
+                
+    
+        
+            
+<li>
+    <a class="black-text" href="/">Home</a>
+</li>
+
+        
+    
+        
+            
+<li>
+    <a class="black-text" href="/about/">关于</a>
+</li>
+
+        
+    
+    
+
+            </ul>
+
+            
+            <a href="/" class="brand-logo grey-text text-darken-3">Material Blog</a>
+
+            
+            <div class="nav-wrapper">
+
+                
+                <ul class="right hide-on-med-and-down">
+                    
+                    
+    
+        
+            
+<li>
+    <a class="black-text" href="/">Home</a>
+</li>
+
+        
+    
+        
+            
+<li>
+    <a class="black-text" href="/about/">关于</a>
+</li>
+
+        
+    
+    
+
+                </ul>
+
+            </div>
+        </div>
+    </div>
+</nav>
+    
+
+    
+
+<article class="max-width">
+    
+    <section class="row">
+        <div class="col s12 m10 offset-m1 l10 offset-l1">
+            <h1>Android Base 001</h1>
+        </div>
+    </section>
+
+    
+    
+
+    
+    <section class="row">
+        <div class="col s12 m8 offset-m2 l2 offset-l1">
+            
+
+<p class="article-meta">
+    <div class="article-meta-container">
+        <div class="article-meta-author-name"></div>
+        <div class="article-meta-description"></div>
+    </div>
+    <span class="article-meta-published-at grey-text text-darken-1">Mar 26, 2020</span>
+</p>
+        </div>
+        <div class="col s12 m8 offset-m2 l6">
+            <h2 id="00环境搭建">00、环境搭建</h2>
+<h3 id="1配置代理">&lt;1、配置代理</h3>
+<ol>
+<li>蓝灯</li>
+<li>小火箭</li>
+</ol>
+<p>在 {用户目录}/.gradle/ 配置 gradle.property 添加如下代码</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">systemProp.http.proxyHost<span style="color:#f92672">=</span>***.***.***.***
+systemProp.https.proxyHost<span style="color:#f92672">=</span>***.***.***.***
+systemProp.http.proxyPort<span style="color:#f92672">=</span>***
+systemProp.https.proxyPort<span style="color:#f92672">=</span>***
+</code></pre></div><h3 id="2使用-阿里云-maven-仓库镜像推荐">&lt;2、使用 阿里云 Maven 仓库镜像（推荐）</h3>
+<p>在 {用户目录}/.gradle/ 创建 <a href="/file/init.gradle">init.gradle</a> 文件，并添加如下代码</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-groovy" data-lang="groovy">allprojects<span style="color:#f92672">{</span>
+    repositories <span style="color:#f92672">{</span>
+        <span style="color:#66d9ef">def</span> ALIYUN_REPOSITORY_URL <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;https://maven.aliyun.com/repository/public/&#39;</span>
+        <span style="color:#66d9ef">def</span> ALIYUN_JCENTER_URL <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;https://maven.aliyun.com/repository/jcenter/&#39;</span>
+        <span style="color:#66d9ef">def</span> ALIYUN_GOOGLE_URL <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;https://maven.aliyun.com/repository/google/&#39;</span>
+        <span style="color:#66d9ef">def</span> ALIYUN_GRADLE_PLUGIN_URL <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;https://maven.aliyun.com/repository/gradle-plugin/&#39;</span>
+        all <span style="color:#f92672">{</span> ArtifactRepository repo <span style="color:#f92672">-&gt;</span>
+            <span style="color:#66d9ef">if</span><span style="color:#f92672">(</span>repo <span style="color:#66d9ef">instanceof</span> MavenArtifactRepository<span style="color:#f92672">){</span>
+                <span style="color:#66d9ef">def</span> url <span style="color:#f92672">=</span> repo<span style="color:#f92672">.</span><span style="color:#a6e22e">url</span><span style="color:#f92672">.</span><span style="color:#a6e22e">toString</span><span style="color:#f92672">()</span>
+                <span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>url<span style="color:#f92672">.</span><span style="color:#a6e22e">startsWith</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#39;https://repo1.maven.org/maven2/&#39;</span><span style="color:#f92672">))</span> <span style="color:#f92672">{</span>
+                    project<span style="color:#f92672">.</span><span style="color:#a6e22e">logger</span><span style="color:#f92672">.</span><span style="color:#a6e22e">lifecycle</span> <span style="color:#e6db74">&#34;Repository ${repo.url} replaced by $ALIYUN_REPOSITORY_URL.&#34;</span>
+                    remove repo
+                <span style="color:#f92672">}</span>
+                <span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>url<span style="color:#f92672">.</span><span style="color:#a6e22e">startsWith</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#39;https://jcenter.bintray.com/&#39;</span><span style="color:#f92672">))</span> <span style="color:#f92672">{</span>
+                    project<span style="color:#f92672">.</span><span style="color:#a6e22e">logger</span><span style="color:#f92672">.</span><span style="color:#a6e22e">lifecycle</span> <span style="color:#e6db74">&#34;Repository ${repo.url} replaced by $ALIYUN_JCENTER_URL.&#34;</span>
+                    remove repo
+                <span style="color:#f92672">}</span>
+                <span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>url<span style="color:#f92672">.</span><span style="color:#a6e22e">startsWith</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#39;https://dl.google.com/dl/android/maven2/&#39;</span><span style="color:#f92672">))</span> <span style="color:#f92672">{</span>
+                    project<span style="color:#f92672">.</span><span style="color:#a6e22e">logger</span><span style="color:#f92672">.</span><span style="color:#a6e22e">lifecycle</span> <span style="color:#e6db74">&#34;Repository ${repo.url} replaced by $ALIYUN_GOOGLE_URL.&#34;</span>
+                    remove repo
+                <span style="color:#f92672">}</span>
+                <span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>url<span style="color:#f92672">.</span><span style="color:#a6e22e">startsWith</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#39;https://plugins.gradle.org/m2/&#39;</span><span style="color:#f92672">))</span> <span style="color:#f92672">{</span>
+                    project<span style="color:#f92672">.</span><span style="color:#a6e22e">logger</span><span style="color:#f92672">.</span><span style="color:#a6e22e">lifecycle</span> <span style="color:#e6db74">&#34;Repository ${repo.url} replaced by $ALIYUN_GRADLE_PLUGIN_URL.&#34;</span>
+                    remove repo
+                <span style="color:#f92672">}</span>
+            <span style="color:#f92672">}</span>
+        <span style="color:#f92672">}</span>
+        maven <span style="color:#f92672">{</span> url ALIYUN_REPOSITORY_URL <span style="color:#f92672">}</span>
+        maven <span style="color:#f92672">{</span> url ALIYUN_JCENTER_URL <span style="color:#f92672">}</span>
+        maven <span style="color:#f92672">{</span> url ALIYUN_GOOGLE_URL <span style="color:#f92672">}</span>
+        maven <span style="color:#f92672">{</span> url ALIYUN_GRADLE_PLUGIN_URL <span style="color:#f92672">}</span>
+    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span>
+
+</code></pre></div>
+        </div>
+    </section>
+</article>
+
+
+
+    
+      <footer class="page-footer grey lighten-5">
+    <div class="row max-width">
+        <div class="col s12 l10 offset-l1 clear-padding">
+            <div class="row">
+    
+        
+    
+
+    
+    
+    <div class="col s12 l6">
+        <h5 class="black-text">Footer Content</h5>
+<p class="grey-text text-darken-4">You can use rows and columns here to organize your footer content.</p>
+    </div>
+
+    
+        <div class="col s12 l4 offset-l2">
+            <div class="row">
+                
+                
+                
+                    <div class="col s6 clear-padding">
+                        
+
+<h5 class="black-text">Services</h5>
+<ul>
+    
+    <li>
+        <a class="grey-text text-darken-4" href="/">Home</a>
+    </li>
+    
+    <li>
+        <a class="grey-text text-darken-4" href="/about/">About</a>
+    </li>
+    
+</ul>
+
+                    </div>
+                
+                    <div class="col s6 clear-padding">
+                        
+
+<h5 class="black-text">Links</h5>
+<ul>
+    
+    <li>
+        <a class="grey-text text-darken-4" href="/#">Service 1</a>
+    </li>
+    
+    <li>
+        <a class="grey-text text-darken-4" href="/#">Service 2</a>
+    </li>
+    
+</ul>
+
+                    </div>
+                
+            </div>
+        </div>
+    
+</div>
+
+
+        </div>
+    </div>
+    <div class="footer-copyright">
+        <div class="row max-width" style="width: 100%;">
+            <div class="col s12 l10 offset-l1">
+                <span class="grey-text text-darken-4">© 2014 Copyright Text</span>
+<div class="right">
+    
+<ul id="dropdown-languages" class="dropdown-content">
+    
+    <li>
+        <a class="dropdown-item black-text" href="https://example.com/">English</a>
+    </li>
+    
+    <li>
+        <a class="dropdown-item black-text" href="https://example.com/fr/">Français</a>
+    </li>
+    
+</ul>
+<a class="dropdown-trigger black-text" href="#!" data-target="dropdown-languages">English
+    <i class="material-icons right">arrow_drop_down</i>
+</a>
+
+</div>
+            </div>
+        </div>
+    </div>
+</footer>
+    
+
+    
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="https://example.com/js/script.js"></script>
+  </body>
+</html>
