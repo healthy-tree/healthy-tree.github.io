@@ -10,7 +10,14 @@
   
   <url>
     <loc>https://healthy-tree.github.io/post/</loc>
-    <lastmod>2020-03-30T11:13:53+08:00</lastmod>
+    <lastmod>2020-04-08T21:44:02+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://healthy-tree.github.io/post/%E6%B2%81%E5%9B%AD%E6%98%A5%E9%9B%AA/</loc>
+    <lastmod>2020-04-08T21:44:02+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
