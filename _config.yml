@@ -99,14 +99,9 @@ ignore:
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: butterfly
+theme: next
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 # deploy:
   # type: ''
-
-aside:
-  card_author:
-    button:
-      link: https://github.com/healthy-tree/
