@@ -8,7 +8,7 @@ subtitle: 'Coding Time'
 description: 'Self-check'
 keywords: Java, Spring Framework, Spring Boot, Native
 author: Kevin Lee
-language: zh
+language: zh-CN
 timezone: 'Asia/Shanghai'
 
 # URL
@@ -90,14 +90,16 @@ pagination_dir: page
 
 # Include / Exclude file(s)
 ## include:/exclude: options only apply to the 'source/' folder
-include:
-exclude:
+include: 
+  - "hello-world.md"
+exclude: 
+  - "hello-world.md"
 ignore:
 
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: butterfly
+theme: next
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
