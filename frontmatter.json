@@ -1,0 +1,17 @@
+{
+  "$schema": "https://frontmatter.codes/frontmatter.schema.json",
+  "frontMatter.framework.id": "other",
+  "frontMatter.content.publicFolder": "",
+  "frontMatter.content.pageFolders": [
+    {
+      "title": "_drafts",
+      "path": "[[workspace]]/source/_drafts"
+    },
+    {
+      "title": "_posts",
+      "path": "[[workspace]]/source/_posts"
+    }
+  ],
+  "frontMatter.content.autoUpdateDate": true,
+  "frontMatter.preview.host": "http://127.0.0.1:4000"
+}
