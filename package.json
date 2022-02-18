@@ -1,6 +1,6 @@
 {
   "name": "hexo-site",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "private": true,
   "scripts": {
     "build": "hexo generate",
@@ -9,10 +9,10 @@
     "server": "hexo server"
   },
   "hexo": {
-    "version": "5.4.1"
+    "version": "6.0.0"
   },
   "dependencies": {
-    "hexo": "^5.0.0",
+    "hexo": "^6.0.0",
     "hexo-generator-archive": "^1.0.0",
     "hexo-generator-category": "^1.0.0",
     "hexo-generator-index": "^2.0.0",
@@ -23,7 +23,7 @@
     "hexo-renderer-stylus": "^2.0.1",
     "hexo-server": "^2.0.0",
     "hexo-theme-butterfly": "^3.8.3",
-    "hexo-theme-next": "^8.7.1",
+    "hexo-theme-next": "^8.10.0",
     "marked": ">=4.0.10"
   }
 }
