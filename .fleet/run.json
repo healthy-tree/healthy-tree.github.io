@@ -1,0 +1,11 @@
+{
+    "configurations": [
+        {
+            "type": "command",
+            "name": "HexoServer",
+            "program": "npx",
+            "args": ["hexo","server"],
+        },
+
+    ]
+}
