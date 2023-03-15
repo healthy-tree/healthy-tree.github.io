@@ -6,10 +6,14 @@
 title: Kevin's Blog
 subtitle: 'Coding Time'
 description: 'Self-check'
-keywords: Java, Spring Framework, Spring Boot, Native
+keywords: Java SE, Spring Framework, Spring Boot, Native
 author: Kevin Lee
 language: zh-CN
 timezone: 'Asia/Shanghai'
+cache:
+    enable: true
+minify: true
+scheme: Pisces
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
