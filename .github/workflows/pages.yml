@@ -42,6 +42,10 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v2
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./public
+          publish_branch: gh-pages  # deploying branch
 #  pages:
 #    runs-on: ubuntu-latest
 #    steps:
