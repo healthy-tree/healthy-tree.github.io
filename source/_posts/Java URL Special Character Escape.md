@@ -1,3 +1,8 @@
+---
+title: Java URL中特殊字符转义
+date: 2024-04-12T17:38:00.000Z
+description: 转义
+---
 # Java URL中特殊字符转义
 
 附常用的字符的转义：
