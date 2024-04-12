@@ -9,43 +9,41 @@ on:
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
-  # Build job
   build:
     runs-on: ubuntu-latest
+    name: A job to deploy blog.
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v1
         with:
-          node-version: '18.x'
-      - name: Setup Pages
-        id: pages
-        uses: actions/configure-pages@v3
-      - name: Cache NPM dependencies
-        uses: actions/cache@v4
+          submodules: true # Checkout private submodules(themes or something else).
+
+      # Caching dependencies to speed up workflows. (GitHub will remove any cache entries that have not been accessed in over 7 days.)
+      - name: Cache node modules
+        uses: actions/cache@v1
+        id: cache
         with:
           path: node_modules
-          key: ${{ runner.OS }}-npm-cache
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
           restore-keys: |
-            ${{ runner.OS }}-npm-cache
+            ${{ runner.os }}-node-
       - name: Install Dependencies
-        run: npm install
-      - name: Build
-        run: npm run build
-  # Deployment
-  deploy:
-    environment:
-      name: github-pages
-      url: ${{steps.deployment.outputs.page_url}}
-    runs-on: ubuntu-latest
-    needs: build
-    steps:
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: peaceiris/actions-gh-pages@v3
+        if: steps.cache.outputs.cache-hit != 'true'
+        run: npm ci
+
+      # Deploy hexo blog website.
+      - name: Deploy
+        id: deploy
+        uses: sma11black/hexo-action@v1.0.3
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./public
-          publish_branch: gh-pages  # deploying branch
+          deploy_key: ${{ secrets.DEPLOY_KEY }}
+          user_name: healthy-tree # (or delete this input setting to use bot account)
+          user_email: lishu5566@gmail.com  # (or delete this input setting to use bot account)
+          commit_msg: ${{ github.event.head_commit.message }}  # (or delete this input setting to use hexo default settings)
+      # Use the output from the `deploy` step(use for test action)
+      - name: Get the output
+        run: |
+          echo "${{ steps.deploy.outputs.notify }}"
 #  pages:
 #    runs-on: ubuntu-latest
 #    steps:
