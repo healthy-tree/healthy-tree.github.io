@@ -31,7 +31,7 @@ jobs:
         if: steps.cache.outputs.cache-hit != 'true'
         run: npm ci
       - name: Build
-        run: rpm run build
+        run: npm run build
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v4
         with:
