@@ -1,7 +1,7 @@
 ---
 title: Passing a list as argument to a vararg method
 date: 2023-04-18 09:30:16
-tags:
+tags: Java, List
 ---
 
 
