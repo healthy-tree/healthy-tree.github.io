@@ -116,3 +116,8 @@ theme: next
 ## Docs: https://hexo.io/docs/one-command-deployment
 # deploy:
   # type: ''
+
+# 首页自动截取摘要
+auto_excerpt:
+  enable: true
+  length: 300
