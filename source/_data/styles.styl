@@ -1,0 +1,16 @@
+// 文章正文段首缩进 2 字符（中文排版习惯）
+// 排除引用块与代码说明里的段落，避免误缩进
+.post-body p {
+  text-indent: 2em;
+}
+
+.post-body blockquote p {
+  text-indent: 0;
+}
+
+// 中英文混排自动加间距（盘古之白）
+// 原生 CSS 方案，替代已弃用的 hexo-pangu 插件
+// Chrome 140+ / Firefox 145+ / Safari 18.4+ 支持，旧浏览器自动忽略
+.post-body {
+  text-autospace: normal;
+}

@@ -18,10 +18,10 @@ jobs:
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           submodules: false # Checkout private submodules(themes or something else).
-      - name: Use Node.js 21
+      - name: Use Node.js 22
         uses: actions/setup-node@v4
         with: 
-          node-version: '21'
+          node-version: '22'
       # Caching dependencies to speed up workflows. (GitHub will remove any cache entries that have not been accessed in over 7 days.)
       - name: Cache Npm Dependencies
         uses: actions/cache@v4
