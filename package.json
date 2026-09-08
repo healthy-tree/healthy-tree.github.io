@@ -21,6 +21,7 @@
     "hexo-generator-searchdb": "^1.5.0",
     "hexo-generator-sitemap": "^3.0.1",
     "hexo-generator-tag": "^2.0.0",
+    "hexo-markdown-mermaid": "^0.0.1",
     "hexo-renderer-asciidoc": "^3.0.0",
     "hexo-renderer-ejs": "^2.0.0",
     "hexo-renderer-marked": "^7.0.1",
@@ -29,5 +30,9 @@
     "hexo-server": "^3.0.0",
     "hexo-theme-next": "^8.29.0",
     "hexo-word-counter": "^0.3.0-rc.1"
+  },
+  "allowScripts": {
+    "fsevents@2.3.3": true,
+    "hexo-util@4.0.0": true
   }
 }

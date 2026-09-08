@@ -54,6 +54,8 @@ highlight:
   tab_replace: ''
   wrap: true
   hljs: false
+  exclude_languages:
+    - mermaid
 prismjs:
   enable: false
   preprocess: true
@@ -101,9 +103,9 @@ search:
 
 # Include / Exclude file(s)
 ## include:/exclude: options only apply to the 'source/' folder
-include: 
+include:
   - "hello-world.md"
-exclude: 
+exclude:
   - "hello-world.md"
 ignore:
 
