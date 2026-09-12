@@ -10,10 +10,6 @@ keywords: Java SE, Spring Framework, Spring Boot, Native
 author: Kevin Lee
 language: zh-CN
 timezone: 'Asia/Shanghai'
-cache:
-    enable: true
-minify: true
-scheme: Pisces
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
@@ -87,7 +83,7 @@ meta_generator: true
 date_format: YYYY-MM-DD
 time_format: HH:mm:ss
 ## updated_option supports 'mtime', 'date', 'empty'
-updated_option: 'mtime'
+updated_option: 'date'
 
 # Pagination
 ## Set per_page to 0 to disable pagination

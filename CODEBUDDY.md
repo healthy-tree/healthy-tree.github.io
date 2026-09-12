@@ -38,8 +38,10 @@ npx hexo new page "about"  # 新建页面
 _config.yml        站点主配置（注意：Hexo 原生配置）
 _config.next.yml   NexT 主题配置（NexT 8 支持站点根目录下的独立配置文件）
 scaffolds/         文章模板（post / draft / page）
-source/_posts/     已发布文章（当前 6 篇）
+source/_posts/     已发布文章（当前 2 篇）
 source/_drafts/    草稿
+source/tags/       标签页（front matter 需 `type: tags`）
+source/categories/ 分类页（front matter 需 `type: categories`）
 themes/.gitkeep    主题由 npm 提供，此目录保持为空
 public/            构建产物（已 gitignore）
 db.json            本地索引缓存（已 gitignore）
@@ -51,7 +53,8 @@ db.json            本地索引缓存（已 gitignore）
 - **文件名**：`new_post_name: :title.md`，中文/英文标题直接作为文件名，不做大小写或空格转换（`filename_case: 0`）。
 - **永久链接**：`:year/:month/:day/:title/`。
 - 文章内容为中文，代码注释可视情况保留英文；技术术语（类名、注解、配置项）保持原文，不要翻译。
-- 修改主题外观优先改 `_config.next.yml`，不要直接改 `node_modules/hexo-theme-next`。注意 `scheme` 只在 `_config.next.yml` 中生效（当前为 `Muse`），`_config.yml` 根部的 `scheme: Pisces` 是无效配置。
+- 修改主题外观优先改 `_config.next.yml`，不要直接改 `node_modules/hexo-theme-next`。主题配置（含 `scheme`，当前为 `Pisces`）只在 `_config.next.yml` 中生效，`_config.yml` 只放 Hexo 原生配置。
+- `_config.yml` 的 `updated_option` 为 `date`，文章「更新于」时间取自 front matter 的 `updated`；不要改回 `mtime`，否则 CI 构建时会按 checkout 时间把所有文章标成当天更新。
 - 修改依赖后需同步 `package-lock.json`，CI 使用 `npm ci`。
 
 ## 发布流程
